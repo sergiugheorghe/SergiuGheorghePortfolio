@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
+//Variables
+//Fonts
+$Lora: 'Lora',
+serif;
+$SourceSans: 'Source Sans Pro',
+Helvetica,
+sans-serif;
+//Colors
+$text: #333333;
+$link: #6D84C4;
+$light: #9B9B9B;
+//Imports
+@import 'reset';
+@import 'typography';
+@import 'grid';
+@import 'vars';
+#site-title {
+    display: none;
+}
+
+#contact-me {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
+
+header {
+    width: 100%;
+    padding: 0.2rem 0;
+    background-color: white;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.hero {
+    background: url(../Images/Splatter-450px.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 2rem 1.5rem;
+    &__headline {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+}
+
+.portfolio-piece {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    padding: 0;
+    width: 100%;
+    height: calc(24rem - 2rem);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+    &:hover {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15)
+    }
+    &:last-child {
+        margin-bottom: 0
+    }
+    &__title {
+        margin-bottom: .75rem;
+        text-decoration: none;
+    }
+    &__title,
+    &__tags {
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
+    }
+}
+
+body {
+    background: white;
+}
+
+.contact {
+    background: #EDEDED;
+    color: darkslategrey;
+    text-align: center;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column nowrap;
+    &__social {
+        margin-bottom: 2rem;
+    }
+    &__button {
+        max-width: 18rem;
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    &__button {
+        margin: 0 1rem;
+        font-size: 1.5rem;
+        color: black;
+        &:hover {
+            color: $link;
+        }
+        transition: all .25s ease-in-out;
+    }
+}
+
+.button {
+    color: white;
+    background: #CCCCCC;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16), 0px 3px 6px 0px rgba(0, 0, 0, 0.23);
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all .25s ease-in-out;
+    letter-spacing: 2px;
+    &:hover {
+        background: darken(#cccccc, 4.5%);
+    }
+}
+
+.footer-list {
+    color: $light;
+    font-size: .875rem;
+    margin: 3rem 2rem 8rem;
+    &__item {
+        display: inline-block;
+        margin-right: .5rem;
+        &:after {
+            content: "|";
+            margin-left: .5rem;
+        }
+        &:last-child {
+            &:after {
+                content: none
+            }
+        }
+    }
+}
+
+#blog {
+    background: #EDEDED;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1.5rem 1.5rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.portfolio1 {
+    display: inline-flex;
+    margin-bottom: 1rem;
+    justify-content: center;
+    list-style: none;
+    padding: 9px;
+    margin: 0 10px auto;
+    color: grey;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font: '$SourceSans';
+    font-weight: 400;
+    &:hover {
+        font-weight: 600;
+        transition: all .17s ease-in-out;
+        color: darkslategrey;
+    }
+}
+
+.click1 {
+    color: WHITE;
+    background-color: darkslategrey;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    &:hover {
+        background-color: $text;
+        transition: all .17s ease-in-out;
+    }
+}
+
+.image1 {
+    padding: 1em;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    margin: auto;
+    max-width: 100%;
+    &:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        opacity: 0.85;
+    }
+}
+
+.checkme {
+    display: inline-block;
+    font-family: 'SourceSans';
+    font-size: 1.5rem;
+    color: grey;
+    text-decoration: none;
+    &:hover {
+        color: darkslategrey;
+        transition: all .17s ease-in-out;
+    }
+}
+
+.checkme1 {
+    display: block;
+    font-family: 'SourceSans';
+    font-size: 1.5rem;
+    color: grey;
+    text-decoration: none;
+    &:hover {
+        color: darkslategrey;
+        transition: all .17s ease-in-out;
+    }
+}
+
+.logo {
+    letter-spacing: 2px;
+    padding-left: 20px;
+    font-size: 1.17rem;
+    font-weight: 400;
+    color: darkslategrey;
+    text-decoration: none;
+    font-family: $SourceSans;
+}
+
+.video {
+    margin: auto;
+    max-width: 100%;
+}
+
+.margin {
+    margin-top: 1.5%;
+}
+
+
+/* Slideshow */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.margin1 {
+    margin-left: 30%;
+    max-width: 40%;
+}

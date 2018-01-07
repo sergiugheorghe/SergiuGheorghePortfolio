@@ -1,0 +1,74 @@
+body{
+    font-family: $SourceSans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    
+}
+h1{  
+    color: darkslategrey;
+    font-family: $SourceSans;
+    font-weight: 700;
+    line-height: 1.25;
+    font-size: 1.5rem;
+    
+    
+}
+h2,h3,h4,h5 {
+    color: white;
+    font-family: $SourceSans;
+    font-weight: 700;
+    line-height: 1.25;
+    font-size: 1.5rem;
+}
+
+#site-title {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+p{
+    margin-bottom: 1rem;
+}
+
+h2{
+color: darkslategrey;
+    padding-left: 1rem;
+    font-size: 2rem;
+    margin: 0 0 1.5rem;
+    flex: center;
+    &:before {
+        content: "";
+        padding:0 .25rem;
+        background: #CCCCCC;
+        margin-right: .7rem;
+    }
+    
+}
+h3{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.333;
+    
+    
+}
+
+.title-flex2{
+    padding: 1rem 0rem 0rem;
+}
+a{
+    color: $link;
+}
+
+blog{
+    p{
+        color: yellow;
+    }
+}
+
+.logo {
+        font-family: $SourceSans;
+}
